@@ -13,10 +13,10 @@ export const App = () => {
     <Routes>
       <Route path="/" element={<SharedLayout />}>
         <Route index  element={<MainPage />}/>
-        <Route path="/login" element={<LoginPage />}/>
-        <Route path="/register" element={<RegistrationPage />}/>
-        <Route path="/diary" element={<DiaryPage />}/>
-        <Route path="/dailycalc" element={<CalculatorPage />}/>
+        <Route path="login" element={<LoginPage />}/>
+        <Route path="register" element={<RegistrationPage />}/>
+        <Route path="diary" element={<DiaryPage />}/>
+        <Route path="dailycalc" element={<CalculatorPage />}/>
         <Route path="*" element={<NotFound />} />
     </Route>
    </Routes>

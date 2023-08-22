@@ -1,12 +1,14 @@
 import { Outlet } from "react-router-dom";
-import { Container } from "@mui/material";
+import { Container } from "components/Container/Container.styled";
 import Header from "./Header/Header";
 
 export const SharedLayout = () => {
-  return (
-    <Container>
+  return (    
+    <>
       <Header />        
-      <Outlet />
-    </Container>
+      <Container>
+        <Outlet />
+      </Container>
+    </>
   );
 };

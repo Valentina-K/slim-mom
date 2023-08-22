@@ -1,14 +1,10 @@
-import { useSelector } from 'react-redux';
-import { Divider } from 'components/Divider/Divider';
-export const Modal = ({})=>{
+import { Backdrop, ModalWindow } from "./Modal.styled";
+export const Modal = ({active, setActive, children})=>{
     return (
-        <ModalContainer>
-            <h2>Your recommended daily calorie intake is</h2>
-            <p><span>{}</span> ккал</p>
-            <Divider />
-            <h3>Foods you should not eat</h3>
-            <List></List>
-            <Button/>
-        </ModalContainer>
+        <Backdrop active={active} onClick={()=>setActive(false)}>
+            <ModalWindow onClick={(e)=>e.stopPropagation()}>
+                {children}
+            </ModalWindow>
+        </Backdrop>       
     )
 }
