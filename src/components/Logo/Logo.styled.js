@@ -7,7 +7,7 @@ export const LogoImage = styled.div`
   width: 46px;
   height: 44px;
   background-size: cover;
-  margin-right: 10px;
+  margin-right: 32px;
   background-image: url(${logoM});
 
   @media (min-width: 768px) {

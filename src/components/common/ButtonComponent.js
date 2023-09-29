@@ -1,12 +1,11 @@
 import { styled } from 'styled-components';
 export const Button = styled.button`
-  display: flex;
   width: ${props => (props.small ? '182px' : '211px')};
   height: ${props => (props.small ? '44px' : '43px')};
   padding: ${props => (props.small ? '13px 51px' : '13px 25px')};
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 30px;
   background: ${props => (props.primary ? '#fc842d' : '#fff')};
   color: ${props => (props.primary ? '#fff' : '#fc842d')};

@@ -13,15 +13,12 @@ export const ButtonBox = styled.div`
 
 export const StyledLink = styled(NavLink)`
   color: #9b9faa;
-  font-family: Verdana;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
   letter-spacing: 0.56px;
   text-transform: uppercase;
   text-decoration: none;
   &:first-child {
-    margin-right: 14px;
+    margin-right: 13px;
   }
   &.active {
     color: #212121;
